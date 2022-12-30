@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-24T20:16:08.495Z",
+    "end": "2022-09-24T20:16:19.402Z",
+    "duration": 10907,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f743bbb8-9c48-4714-a998-f54ea0331cdd",
+      "title": "",
+      "fullFile": "cypress\\e2e\\sampleTest\\file_upload_test.cy.js",
+      "file": "cypress\\e2e\\sampleTest\\file_upload_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "664389c8-9b0c-4065-bba5-0dba871a5eac",
+          "title": "file uploading",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test file upload on automation practice",
+              "fullTitle": "file uploading test file upload on automation practice",
+              "timedOut": null,
+              "duration": 351,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://ps.uci.edu/~franklin/doc/file_upload.html');\ncy.get(\"input[name='userfile']\").attachFile('profile.json');",
+              "err": {},
+              "uuid": "edd53db1-8180-4dfd-a685-376906a85465",
+              "parentUUID": "664389c8-9b0c-4065-bba5-0dba871a5eac",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "drag & drop file upload",
+              "fullTitle": "file uploading drag & drop file upload",
+              "timedOut": null,
+              "duration": 1255,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://css-tricks.com/examples/DragAndDropFileUploading/');\ncy.get('#file').attachFile('myinvitation.jpeg');\ncy.get('div.box__success').should('contain.text', 'Done! ');",
+              "err": {},
+              "uuid": "b1ea0bee-ab43-417a-85b3-18ab76ae56fb",
+              "parentUUID": "664389c8-9b0c-4065-bba5-0dba871a5eac",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "multiple file upload",
+              "fullTitle": "file uploading multiple file upload",
+              "timedOut": null,
+              "duration": 3080,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://davidwalsh.name/demo/multiple-file-upload.php');\ncy.get('#filesToUpload').attachFile(['example.json', 'profile.json']);\ncy.get('#fileList li:nth-of-type(1)').should('contain.text', 'example.json');",
+              "err": {},
+              "uuid": "8e917867-4db0-4128-a831-ad0e0ba314fa",
+              "parentUUID": "664389c8-9b0c-4065-bba5-0dba871a5eac",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "edd53db1-8180-4dfd-a685-376906a85465",
+            "b1ea0bee-ab43-417a-85b3-18ab76ae56fb",
+            "8e917867-4db0-4128-a831-ad0e0ba314fa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4686,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

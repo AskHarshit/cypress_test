@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-25T10:10:30.250Z",
+    "end": "2022-09-25T10:11:03.486Z",
+    "duration": 33236,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4f706808-7f01-48e2-ab5f-756223a3ff79",
+      "title": "",
+      "fullFile": "cypress\\e2e\\sampleTest\\automation_practice_test.cy.js",
+      "file": "cypress\\e2e\\sampleTest\\automation_practice_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "251da4fe-6621-4ee4-bc72-9c6b5d4bc0a0",
+          "title": "test to check reusable commands",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test commands",
+              "fullTitle": "test to check reusable commands test commands",
+              "timedOut": null,
+              "duration": 23555,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('include', 'controller=my-account');\ncy.get('.myaccount-link-list li').should('have.length', 5);",
+              "err": {},
+              "uuid": "b93001f2-4fa6-4baf-af71-9b72c9bc80ca",
+              "parentUUID": "251da4fe-6621-4ee4-bc72-9c6b5d4bc0a0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b93001f2-4fa6-4baf-af71-9b72c9bc80ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23555,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

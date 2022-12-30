@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-24T20:13:34.090Z",
+    "end": "2022-09-24T20:13:41.731Z",
+    "duration": 7641,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4718baf4-71c0-4c95-8c5c-83ac7f8a2c08",
+      "title": "",
+      "fullFile": "cypress\\e2e\\sampleTest\\viewport_test.cy.js",
+      "file": "cypress\\e2e\\sampleTest\\viewport_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c2de7c77-4cdf-4416-bc79-216209539cb9",
+          "title": "testing different view ports",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "open in macbook-13",
+              "fullTitle": "testing different view ports open in macbook-13",
+              "timedOut": null,
+              "duration": 2345,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('macbook-13');\ncy.screenshot();\ncy.wait(200);",
+              "err": {},
+              "uuid": "ea71a492-4568-49d4-ba6f-58b1ad3f9841",
+              "parentUUID": "c2de7c77-4cdf-4416-bc79-216209539cb9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "open in macbook-15",
+              "fullTitle": "testing different view ports open in macbook-15",
+              "timedOut": null,
+              "duration": 1394,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('macbook-15');\ncy.screenshot();\ncy.wait(200);",
+              "err": {},
+              "uuid": "86ed5eea-8d54-4f03-b31c-bac42584236a",
+              "parentUUID": "c2de7c77-4cdf-4416-bc79-216209539cb9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "open in iphone-x",
+              "fullTitle": "testing different view ports open in iphone-x",
+              "timedOut": null,
+              "duration": 1216,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('iphone-x');\ncy.screenshot();\ncy.wait(200);",
+              "err": {},
+              "uuid": "f015c8bf-3e61-48be-9ff6-495cde49e756",
+              "parentUUID": "c2de7c77-4cdf-4416-bc79-216209539cb9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "open in samsung",
+              "fullTitle": "testing different view ports open in samsung",
+              "timedOut": null,
+              "duration": 1180,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('samsung-s10');\ncy.screenshot();\ncy.wait(200);",
+              "err": {},
+              "uuid": "e607dd2c-b092-47af-b245-2f3214726c11",
+              "parentUUID": "c2de7c77-4cdf-4416-bc79-216209539cb9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ea71a492-4568-49d4-ba6f-58b1ad3f9841",
+            "86ed5eea-8d54-4f03-b31c-bac42584236a",
+            "f015c8bf-3e61-48be-9ff6-495cde49e756",
+            "e607dd2c-b092-47af-b245-2f3214726c11"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6135,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

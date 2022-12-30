@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-09-24T20:15:58.730Z",
+    "end": "2022-09-24T20:15:59.082Z",
+    "duration": 352,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7039f537-a146-4ee4-ac6b-07ad22446f35",
+      "title": "",
+      "fullFile": "cypress\\e2e\\sampleTest\\element_get.cy.js",
+      "file": "cypress\\e2e\\sampleTest\\element_get.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9f72eb1d-6868-443b-9635-d480fcbcc83c",
+          "title": "check element get concept",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "element get testing",
+              "fullTitle": "check element get concept element get testing",
+              "timedOut": null,
+              "duration": 303,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.freshworks.com/');\ncy.contains('Platform').click();\ncy.url().should('include', '#');\ncy.get('.h0-80').should('be.visible').and('contain', 'software').and('have.length', 1);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.freshworks.com/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.freshworks.com/\n\nThe response we received from your web server was:\n\n  > 403: Forbidden\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (http://localhost:63625/__cypress/runner/cypress_runner.js:142110:84)\n    at visitFailedByErr (http://localhost:63625/__cypress/runner/cypress_runner.js:141429:12)\n    at <unknown> (http://localhost:63625/__cypress/runner/cypress_runner.js:142090:13)\n    at tryCatcher (http://localhost:63625/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (http://localhost:63625/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (http://localhost:63625/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (http://localhost:63625/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (http://localhost:63625/__cypress/runner/cypress_runner.js:9431:18)\n    at _drainQueueStep (http://localhost:63625/__cypress/runner/cypress_runner.js:6025:12)\n    at _drainQueue (http://localhost:63625/__cypress/runner/cypress_runner.js:6018:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:63625/__cypress/runner/cypress_runner.js:6034:5)\n    at Async.drainQueues (http://localhost:63625/__cypress/runner/cypress_runner.js:5904:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/sampleTest/element_get.cy.js:3:11)",
+                "diff": null
+              },
+              "uuid": "cb2b6794-6cd4-48a3-bbaf-0e6151511fb0",
+              "parentUUID": "9f72eb1d-6868-443b-9635-d480fcbcc83c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cb2b6794-6cd4-48a3-bbaf-0e6151511fb0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 303,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

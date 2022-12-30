@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-24T20:16:00.136Z",
+    "end": "2022-09-24T20:16:07.368Z",
+    "duration": 7232,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b92d245b-07a4-47cc-936e-ff29d381a797",
+      "title": "",
+      "fullFile": "cypress\\e2e\\sampleTest\\element_test.cy.js",
+      "file": "cypress\\e2e\\sampleTest\\element_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8165c21e-69b6-4293-bd81-1acc00b44486",
+          "title": "launch my app",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "app testing",
+              "fullTitle": "launch my app app testing",
+              "timedOut": null,
+              "duration": 5238,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.amazon.in/ref=nav_logo');\ncy.contains('Best Sellers').click();\ncy.url().should('include', 'gp/bestsellers/?ref_=nav_cs_bestsellers');",
+              "err": {},
+              "uuid": "c891085c-8ff9-4bd6-b775-cae87d66d09f",
+              "parentUUID": "8165c21e-69b6-4293-bd81-1acc00b44486",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c891085c-8ff9-4bd6-b775-cae87d66d09f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5238,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
